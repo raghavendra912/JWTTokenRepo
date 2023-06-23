@@ -20,6 +20,7 @@ export class BoardAdminComponent implements OnInit{
         if (err.error) {
           this.content = JSON.parse(err.error).message;
         } else {
+          console.log("Error with status");
           this.content = "Error with status: " + err.status;
         }
       }
